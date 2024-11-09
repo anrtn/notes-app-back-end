@@ -1,12 +1,12 @@
-const {
+import {
   addNoteHandler,
   getAllNotesHandler,
   getNoteByIdHandler,
   editNoteByIdHandler,
   deleteNoteByIdHandler,
-} = require("./handler");
+} from "./handler.js";
 
-module.exports = [
+const routes = [
   {
     method: "POST",
     path: "/notes",
@@ -33,3 +33,5 @@ module.exports = [
     handler: deleteNoteByIdHandler,
   },
 ];
+
+export default routes;
