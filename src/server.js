@@ -1,5 +1,5 @@
 import Hapi from "@hapi/hapi";
-const routes = require("./routes");
+import routes from "./routes.js";
 const { addNoteHandler, getAllNotesHandler } = require("./handler");
 
 const init = async () => {
