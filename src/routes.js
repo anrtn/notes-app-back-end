@@ -1,10 +1,10 @@
-import {
+const {
   addNoteHandler,
   getAllNotesHandler,
   getNoteByIdHandler,
   editNoteByIdHandler,
   deleteNoteByIdHandler,
-} from "./handler.js";
+} = require("./handler");
 
 const routes = [
   {
@@ -34,4 +34,4 @@ const routes = [
   },
 ];
 
-export default routes;
+module.exports = routes;

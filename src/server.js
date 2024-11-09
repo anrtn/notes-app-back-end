@@ -1,6 +1,5 @@
-import Hapi from "@hapi/hapi";
-import routes from "./routes.js";
-const { addNoteHandler, getAllNotesHandler } = require("./handler");
+const Hapi = require("@hapi/hapi");
+const routes = require("./routes");
 
 const init = async () => {
   const server = Hapi.server({
@@ -13,7 +12,7 @@ const init = async () => {
     },
   });
 
-  // Daftarkan route
+  // Register routes
   server.route(routes);
 
   await server.start();
