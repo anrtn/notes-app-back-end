@@ -1,15 +1,15 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import daStyle from "eslint-config-dicodingacademy";
+const globals = require("globals");
+const pluginJs = require("@eslint/js");
+const daStyle = require("eslint-config-dicodingacademy");
 
 /** @type {import('eslint').Linter.Config} */
-export default {
+module.exports = {
   files: ["**/*.cjs"],
   languageOptions: {
-    sourceType: "module", // Menunjukkan kita menggunakan ESM
+    sourceType: "module",
     globals: {
-      ...globals.node,  // Menambahkan globals untuk server-side (Node.js)
-      ...globals.browser,  // Jika ingin juga mendukung browser, bisa ditambahkan
+      ...globals.node,
+      ...globals.browser,
     },
   },
   extends: ["eslint:recommended", pluginJs.configs.recommended, daStyle],
