@@ -4,7 +4,7 @@ import daStyle from "eslint-config-dicodingacademy";
 
 /** @type {import('eslint').Linter.Config} */
 export default {
-  files: ["**/*.js"],
+  files: ["**/*.cjs"],
   languageOptions: {
     sourceType: "module", // Menunjukkan kita menggunakan ESM
     globals: {

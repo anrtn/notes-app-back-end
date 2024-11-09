@@ -2,9 +2,9 @@
   "name": "notes-app-back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "src/server.cjs",
   "scripts": {
-    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-prod": "NODE_ENV=production node ./src/server.cjs",
     "start-dev": "nodemon ./src/server.js",
     "lint": "eslint ./src"
   },
